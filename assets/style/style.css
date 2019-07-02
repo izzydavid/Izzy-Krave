@@ -1,0 +1,152 @@
+/* Can you get into the live server? */
+
+  /* Style the video: 100% width and height to cover the entire window */
+  #myVideo {
+    position: fixed;
+    z-index: -100;
+}
+
+.craveHeader { 
+  color: white; 
+  font-family: 'Satisfy', cursive;
+  font-size: 200px; 
+}
+
+#searchBar { 
+  width: 500px;
+  position: relative;
+  left: 35%; 
+}
+
+#search-here { 
+  position: relative;
+  top: 75px; 
+
+}
+.card-title { 
+  font: 5px; 
+  color: ivory; 
+  background:  #3b3b3b; 
+  padding: 0; 
+  margin: 0; 
+}
+.card-img-top { 
+  width: 10%; 
+  height: 75%; 
+  
+}
+  /* Begining of Recipe Output CSS*/
+  
+  #results-here{ 
+    position: relative; 
+    top: 200px;
+    left: 50px;  
+    transition: 2.0s ease-in; 
+    
+  }
+
+ .result-card-body { 
+  text-align: center;
+  font-family: 'Courgette', cursive;
+  padding: 3px;
+  }
+
+.list-group-item { 
+  font-size: 14px;
+  background: #3b3b3b !important; 
+  color: ivory; 
+}
+
+/* End of Recipe Output CSS*/ 
+
+
+  /* Begining of Restaurants Output CSS*/
+
+  #results-here2{ 
+    position: relative; 
+    top: 225px;
+    left: 5px;  
+    transition: 2.0s ease-in; 
+
+
+  }
+
+.list-group-item2 {
+  margin: auto;  
+  font-size: 14px;
+  background: #3b3b3b !important; 
+  color: ivory; 
+  width: 340px;  
+  
+}
+
+.result-card-body2 { 
+  font-family: 'Courgette', cursive;
+  width: 400px; 
+  height: 400px;
+
+  }
+
+  .card-img-top2 { 
+    width: 85%; 
+    height: 75%; 
+  }
+
+  /* End of Restaurants Output CSS*/
+
+  /* Begining of Cooking Class Output CSS*/
+  #results-here3{ 
+    position: relative; 
+    top: 250px;
+    left: 25px;  
+    transition: 2.0s ease-in; 
+
+  }
+
+  .result-card-body3 { 
+    font-family: 'Courgette', cursive;
+    height: 50px; 
+    color: ivory; 
+    font-size: 15px; 
+    background: #3b3b3b !important; 
+    margin: 0; 
+    }
+
+
+
+#clear-button {
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+#moreResults-button {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#buttons-here{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+  /* End of Cooking Class Output CSS*/
+  body { 
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {...} 
+    
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {...} 
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {...} 
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {...} 
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {...}
+    
+    
+    }
+    

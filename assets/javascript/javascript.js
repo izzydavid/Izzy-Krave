@@ -120,9 +120,9 @@ function RestaurantsNearYou() {
     success: function (response) {
       for (i = 0; i < limit; i++) {
         var resultImg = "<img id='img' class='card-img-top' class='center' src=" + response.businesses[i].image_url + " alt='Card image cap'></img>";
-        var resultName = "<h5 class='list-group-item' class='card-title'>" + response.businesses[i].name + "</h5>";
-        var resultRating = "<li class='list-group-item'> Rating: " + response.businesses[i].rating + " Stars</li>";
-        var resultAddress = "<li class='list-group-item'>" + response.businesses[i].location.address1 + " " + response.businesses[i].location.city + " " + response.businesses[i].location.zip_code + "</li>";
+        var resultName = "<h5 class='result-card-body' class='card-title'>" + response.businesses[i].name + "</h5>";
+        var resultRating = "<li class='result-card-body'> Rating: " + response.businesses[i].rating + " Stars</li>";
+        var resultAddress = "<li class='result-card-body'>" + response.businesses[i].location.address1 + " " + response.businesses[i].location.city + " " + response.businesses[i].location.zip_code + "</li>";
         var resultLink = "<a class='list-group-item' href=" + response.businesses[i].url + "class='card-link'>" + response.businesses[i].name + "'s Yelp Page</a><p><p>"
         var restaurantDiv = $("<div class='result-card-body' class='col-sm-4'>" + resultImg + resultName + resultRating + resultAddress + resultLink + "</div>");
         $("#results-here").append(restaurantDiv);

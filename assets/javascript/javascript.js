@@ -93,7 +93,7 @@ function CookingClasses() {
     console.log(classKi);
     var result1 = classKi.events;
     for (var k = 0; k < limit; k++) {
-      var result1Img = "<img id='img' class='card-img-top' class='center' src='assets/images/cookingClass1.png' alt='Card image cap'></img>";
+      var result1Img = "<img id='img' class='card-img-top' class='center' src='assets/images/cookingClass1.jpg' alt='Card image cap'></img>";
       var result1Title = "<h5 class='list-group-item' class='card-title'>" + result1.event[k].title + "</h5>";
       var result1Start = "<li class='list-group-item'>" + result1.event[k].start_time + "</li>";
       var result1Address = "<li class='list-group-item'>" + result1.event[k].venue_address + " " + result1.event[k].city_name + " " + result1.event[k].region_name + "</li>";

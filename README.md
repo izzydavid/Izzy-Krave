@@ -13,6 +13,7 @@ Powerpoint for Group Project 1 Images:
 ![alt text](https://raw.githubusercontent.com/izzydavid/Krave/master/assets/images/Slide5.png)
 
 ![alt text](https://raw.githubusercontent.com/izzydavid/Krave/master/assets/images/Slide6.png)
+![alt text](https://raw.githubusercontent.com/izzydavid/Krave/master/assets/images/apiChart.png)
 
 ![alt text](https://raw.githubusercontent.com/izzydavid/Krave/master/assets/images/Slide7.png)
 

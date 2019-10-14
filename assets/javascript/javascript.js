@@ -22,20 +22,6 @@ $(".menu1-item").click(function () {
   $("#results-here").empty();
   $("#buttons-here").empty();
   areButtons = false;
-  // $("#search-here").empty();
-  // if(selector === "Recipes"){
-  //   $("#search-here").append("<input id='search-bar' type='search' placeholder='Food Goes Here: General or Specific!!!' style='color: ivory'>");
-  //   $("#search-here").append("<button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>");
-  // }
-  // if(selector === "Restaurants Near You"){
-  //   $("#search-here").append("<input id='search-bar' type='search' placeholder='Food Goes Here: General or Specific!!!' style='color: ivory'>");
-  //   $("#search-here").append("<input id='location-bar' type='search' placeholder='Location Here: General or Specific!!!' style='color: ivory'>");
-  //   $("#search-here").append("<button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>");    
-  // }
-  // if(selector === "Cooking Classes"){
-  //   $("#search-here").append("<input id='location-bar' type='search' placeholder='Location Here: General or Specific!!!' style='color: ivory'>");
-  //   $("#search-here").append("<button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>");     
-  // }
 });
 
 $("#buttons-here").click(function () {
@@ -46,27 +32,11 @@ $("#buttons-here").click(function () {
   $("#buttons-here").empty();
 });
 
-// $("#moreResults-button").click(function () {
-//   event.preventDefault();
-//   limit = limit + 10;
-//   console.log(limit);
-//   $("#results-here").empty();
-//   if (selector === "Restaurants Near You") {
-//     RestaurantsNearYou();
-//   }
-//   if (selector === "Cooking Classes") {
-//     CookingClasses();
-//   }
-//   if (selector === "Recipes") {
-//     RecipeSearch();
-//   }
-// });
 
 $("#search-button").on("click", function (event) {
   event.preventDefault();
   if (!areButtons){
     $("#buttons-here").append("<button id='clear-button' class='btn btn-lg btn-success' type='submit'>Clear Results</button>");
-  //   $("#buttons-here").append("<button id='moreResults-button' class='btn btn-lg btn-success' type='submit'>More Results</button>");
     areButtons = true;
   }
   if (selector === "Restaurants Near You") {

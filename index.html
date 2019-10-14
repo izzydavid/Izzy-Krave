@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" contexnt="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Courgette|Noto+Sans+HK|Swanky+and+Moo+Moo&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,63 +15,59 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+  </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
 </head>
 
 <body>
 
-        <!-- The Beginning of the Video -->
+  <!-- The Beginning of the Video -->
 
   <video autoplay muted loop id="myVideo">
     <source src="https://asset.homechef.com/hero/video.mp4" src="https://asset.homechef.com/hero/video.mp4"
       type="video/mp4">
   </video>
-      <!-- The End of the Video -->
+  <!-- The End of the Video -->
 
 
-      <!-- The Beginning of the Crave -->
+  <!-- The Beginning of the Crave -->
   <div class="craveHeader" style="text-align: center">Krave</div>
-      <!-- The End of the Crave -->
-
-      <!-- The Beginning of the Dropdown Menu -->
+  <!-- The End of the Crave -->
 
 
-        <!-- The End of the Dropdown Menu -->
-      
-        <!-- Beginning of Search Bar -->
-        <form id="searchBar">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">What are you Kraving?<span
-              class="caret"></span></button>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-            <li role="presentation"><a role="menuitem" class="menu1-item" id="Recipes" tabindex="-1">Recipes</a></li>
-            <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1">Cooking Classes</a></li>
-            <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants Near You" tabindex="-1">Restaurants Near You</a></li>
-          </ul>
-          <div id="search-here" class="row align-items-center">
-              <input id='search-bar' type='search' placeholder='Food Goes Here: Needed for Restaurants and Recipes' style='color: ivory'>
-              <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants' style='color: ivory'>
-              <button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>      
-          </div>
-        </form>
-        <div id="results-here" class="row">
-        </div>
-        <div id="buttons-here" class="row">
-            <!-- <button id='clear-button' class='btn btn-lg btn-success' type='submit'>Clear Results</button> -->
-            
-        </div>
-      
+  <!-- Beginning of Search Bar -->
+  <form id="searchBar">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">What are you
+      Kraving?<span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Recipes" tabindex="-1">Recipes</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1">Cooking
+          Classes</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants Near You" tabindex="-1">Restaurants
+          Near You</a></li>
+    </ul>
+    <div id="search-here" class="row align-items-center">
+      <input id='search-bar' type='search' placeholder='Food Goes Here: Needed for Restaurants and Recipes'
+        style='color: ivory'>
+      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'
+        style='color: ivory'>
+      <button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>
+    </div>
+  </form>
+  <div id="results-here" class="row">
+  </div>
+  <div id="buttons-here" class="row">
+    <!-- <button id='clear-button' class='btn btn-lg btn-success' type='submit'>Clear Results</button> -->
+
+  </div>
+
 
   <script src="assets/javascript/javascript.js"></script>
   <script src="https://kit.fontawesome.com/d665a22156.js"></script>
 </body>
 
 </html>
-
-

@@ -2,13 +2,13 @@
 
 Powerpoint for Group Project 1 Images: 
 
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide1.jpeg)
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide2.jpeg)
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide3.jpeg)
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide4.jpeg)
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide5.jpeg)
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide6.jpeg)
-(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide7.jpeg)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide1.png)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide2.png)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide3.png)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide4.png)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide5.png)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide6.png)
+(https://github.com/izzydavid/Krave/blob/master/assets/images/Slide7.png)
 
 Original Ideas for Project 1 Notes
 1.	Events nightlife lifestyle 

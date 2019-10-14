@@ -164,5 +164,5 @@ function takeClasses() {
   classParams = {
     "app_key": "Xgj2Vg7ptjMQR6q2"
   };
-  classParams.q = "cooking"
+  classParams.q = "cooking"; 
 }

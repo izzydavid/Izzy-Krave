@@ -12,7 +12,7 @@ window.onload = deferVideo;
 var queryURL;
 var queryParams;
 var selector = "";
-var limit = 10;
+var limit = 16;
 var areButtons = false;
 
 
@@ -63,12 +63,12 @@ function CookingClasses() {
     console.log(classKi);
     var result1 = classKi.events;
     for (var k = 0; k < limit; k++) {
-      var result1Img = "<img id='img' class='card-img-top' class='center' src='assets/images/cookingClass1.jpg' alt='Card image cap'></img>";
-      var result1Title = "<h5 class='list-group-item' class='card-title'>" + result1.event[k].title + "</h5>";
-      var result1Start = "<li class='list-group-item'>" + result1.event[k].start_time + "</li>";
-      var result1Address = "<li class='list-group-item'>" + result1.event[k].venue_address + " " + result1.event[k].city_name + " " + result1.event[k].region_name + "</li>";
-      var result1Link = "<a class='list-group-item' href=" + result1.event[k].url + ">" + result1.event[k].title;
-      var classLife = $("<div class='result-card-body' class='col-sm-4'>" + result1Img + result1Title + result1Start + result1Address + result1Link + "</div>");
+      var result1Img = "<img id='img' class='card-img-top' src='assets/images/cookingClass1.jpg' alt='Card image cap'></img>";
+      var result1Title = "<h5 class='card-title'>" + result1.event[k].title + "</h5>";
+      var result1Start = "<li>" + result1.event[k].start_time + "</li>";
+      var result1Address = "<li>" + result1.event[k].venue_address + " " + result1.event[k].city_name + " " + result1.event[k].region_name + "</li>";
+      var result1Link = "<a class='card-title' target=_blank' href=" + result1.event[k].url + ">" + result1.event[k].title;
+      var classLife = $("<div class='center-align card-panel'>" + result1Img + result1Title + result1Start + result1Address + result1Link + "</div>");
       $("#results-here").append(classLife);
     }
   });
@@ -90,11 +90,11 @@ function RestaurantsNearYou() {
     success: function (response) {
       for (i = 0; i < limit; i++) {
         var resultImg = "<img id='img' class='card-img-top' class='center' src=" + response.businesses[i].image_url + " alt='Card image cap'></img>";
-        var resultName = "<h5 class='result-card-body' class='card-title'>" + response.businesses[i].name + "</h5>";
-        var resultRating = "<li class='result-card-body'> Rating: " + response.businesses[i].rating + " Stars</li>";
-        var resultAddress = "<li class='result-card-body'>" + response.businesses[i].location.address1 + " " + response.businesses[i].location.city + " " + response.businesses[i].location.zip_code + "</li>";
-        var resultLink = "<a class='list-group-item' href=" + response.businesses[i].url + "class='card-link'>" + response.businesses[i].name + "'s Yelp Page</a><p><p>"
-        var restaurantDiv = $("<div class='result-card-body' class='col-sm-4'>" + resultImg + resultName + resultRating + resultAddress + resultLink + "</div>");
+        var resultLink = "<a href=" + response.businesses[i].url + "class='card-link' target='_blank'>" + response.businesses[i].name + "'s Yelp Page</a><p><p>"; 
+        var resultName = "<h5 class='card-title'>" + response.businesses[i].name + "</h5>";
+        var resultRating = "<li> Rating: " + response.businesses[i].rating + " Stars</li>";
+        var resultAddress = "<li>" + response.businesses[i].location.address1 + " " + response.businesses[i].location.city + " " + response.businesses[i].location.zip_code + "</li>";
+        var restaurantDiv = $("<div class='card-panel'>" + resultImg + resultName + resultRating + resultAddress + resultLink + "</div>");
         $("#results-here").append(restaurantDiv);
       };
     }
@@ -111,9 +111,9 @@ function RecipeSearch() {
   })
     .then(function (response) {
       for (var i = 0; i < limit; i++) {
-        var images = "<img class='card-img-top' class='center' src=" + response.hits[i].recipe.image + " alt='Card image cap'></img>";
-        var recipeLink = "<a class='list-group-item' href=" + response.hits[i].recipe.url + "class='card-link'>" + response.hits[i].recipe.label + "</a><p><p>"
-        var foodLife = $("<div class='result-card-body' class='col-sm-4'>" + images + recipeLink + "</div>");
+        var images = "<img class='card-img-top' src=" + response.hits[i].recipe.image + " alt='Card image cap'></img>";
+        var recipeLink = "<a class='card-link' href=" + response.hits[i].recipe.url + "class='target='_blank'>" + response.hits[i].recipe.label + "</a><p><p>"; 
+        var foodLife = $("<div class='card-panel center-align col s12 m4 l3'>" + images + recipeLink + "</div>");
         $("#results-here").append(foodLife);
       }
     });
@@ -136,3 +136,17 @@ function takeClasses() {
   };
   classParams.q = "cooking"; 
 }
+
+$('.card-img-top').hover(function (e) { 
+  $('.card-panel').animate({
+    overflow: visible, 
+    });
+});
+
+$(selector).hover(function () {
+    // over
+    
+  }, function () {
+    // out
+  }
+);

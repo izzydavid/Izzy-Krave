@@ -1,134 +1,47 @@
-/* Can you get into the live server? */
 
   /* Style the video: 100% width and height to cover the entire window */
-  #myVideo {
-    position: fixed;
-    z-index: -100;
+#myVideo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: center;
+  z-index: -1;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.craveHeader { 
-  color: white; 
+.KraveHeader { 
+  color: ivory !important; 
   font-family: 'Satisfy', cursive;
   font-size: 200px; 
+  text-align: center !important;
 }
 
-#searchBar { 
-  width: 500px;
-  position: relative;
-  left: 35%; 
-}
-
-#search-here { 
-  position: relative;
-  top: 75px; 
-
-}
-.card-title { 
-  font: 5px; 
-  color: ivory; 
-  background:  #3b3b3b; 
-  padding: 0; 
-  margin: 0; 
-}
 .card-img-top { 
-  width: 10%; 
-  height: 75%; 
-  
-}
-  /* Begining of Recipe Output CSS*/
-  
-  #results-here{ 
-    position: relative; 
-    top: 200px;
-    left: 50px;  
-    transition: 2.0s ease-in; 
-    
-  }
-
- .result-card-body { 
-  text-align: center;
-  font-family: 'Courgette', cursive;
-  padding: 3px;
-  }
-
-.list-group-item { 
-  font-size: 14px;
-  background: #3b3b3b !important; 
-  color: ivory; 
+  height: 150px;
+  width: 100px; 
 }
 
-/* End of Recipe Output CSS*/ 
-
-
-  /* Begining of Restaurants Output CSS*/
-
-  #results-here2{ 
-    position: relative; 
-    top: 225px;
-    left: 5px;  
-    transition: 2.0s ease-in; 
-
-
-  }
-
-.list-group-item2 {
-  margin: auto;  
-  font-size: 14px;
-  background: #3b3b3b !important; 
-  color: ivory; 
-  width: 340px;  
-  
+.card-panel { 
+max-width: 25%; 
+max-height: 25%; 
+border-radius: 20px !important; 
+margin: 5px !important; 
+padding: 5px !important;
+float: left;
+font-size: 15px;
+overflow: hidden;
 }
 
-.result-card-body2 { 
-  font-family: 'Courgette', cursive;
-  width: 400px; 
-  height: 400px;
-
-  }
-
-  .card-img-top2 { 
-    width: 85%; 
-    height: 75%; 
-  }
-
-  /* End of Restaurants Output CSS*/
-
-  /* Begining of Cooking Class Output CSS*/
-  #results-here3{ 
-    position: relative; 
-    top: 250px;
-    left: 25px;  
-    transition: 2.0s ease-in; 
-
-  }
-
-  .result-card-body3 { 
-    font-family: 'Courgette', cursive;
-    height: 50px; 
-    color: ivory; 
-    font-size: 15px; 
-    background: #3b3b3b !important; 
-    margin: 0; 
-    }
-
-
-
-#clear-button {
-  margin-left: auto;
-  margin-right: auto;  
+.card-title { 
+  font-size: 15px; 
 }
-
-#moreResults-button {
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-#buttons-here{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
   /* End of Cooking Class Output CSS*/
   body { 
@@ -149,4 +62,3 @@
     
     
     }
-    

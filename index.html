@@ -26,45 +26,55 @@
 <body>
 
   <!-- The Beginning of the Video -->
-
   <video autoplay muted loop id="myVideo">
     <source src="https://asset.homechef.com/hero/video.mp4" src="https://asset.homechef.com/hero/video.mp4"
       type="video/mp4">
   </video>
   <!-- The End of the Video -->
 
-
+<div class="container center-align col s12 m4 l3"> 
   <!-- The Beginning of the Crave -->
-  <div class="craveHeader" style="text-align: center">Krave</div>
+  <a class="KraveHeader">Krave</a>
   <!-- The End of the Crave -->
 
 
   <!-- Beginning of Search Bar -->
-  <form id="searchBar">
+  <div class="row">
+  <form id="searchBar" class=" col s12 m4 l3">
     <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">What are you
       Kraving?<span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
       <li role="presentation"><a role="menuitem" class="menu1-item" id="Recipes" tabindex="-1">Recipes</a></li>
-      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1">Cooking
-          Classes</a></li>
-      <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants Near You" tabindex="-1">Restaurants
-          Near You</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1">Cooking Classes</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants Near You" tabindex="-1">Restaurants Near You</a></li>
     </ul>
-    <div id="search-here" class="row align-items-center">
+  </div> 
+    <div id="search-here" class="row center-align col s12 m4 l3">
       <input id='search-bar' type='search' placeholder='Food Goes Here: Needed for Restaurants and Recipes'
         style='color: ivory'>
-      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'
-        style='color: ivory'>
+
+      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'style='color: ivory'>
+
       <button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>
+
     </div>
   </form>
-  <div id="results-here" class="row">
-  </div>
-  <div id="buttons-here" class="row">
-    <!-- <button id='clear-button' class='btn btn-lg btn-success' type='submit'>Clear Results</button> -->
+  <!-- End of Search Bar -->
 
+  <!-- Start of Results -->
+  <div class="row center-align">
+  <div id="results-here" class="col s12 m4 l3">
   </div>
+</div> 
+  <!-- End of Results -->
 
+  <!-- Start of Clear Button -->
+  <div class="row center-align"> 
+  <div id="buttons-here" class="col s12 m4 l3">
+  </div>
+  </div>
+  <!-- End of Clear Button -->
+</div>
 
   <script src="assets/javascript/javascript.js"></script>
   <script src="https://kit.fontawesome.com/d665a22156.js"></script>

@@ -1,7 +1,7 @@
 # Krave
 Krave is a website that allows users to search for ”recipes, cooking class, restaurants” to give users options of eating in with their searched recipes, cooking class as a night out with their significant other, and restaurants where you can dine out with your other significant other!
 
-
+![alt text](https://github.com/izzydavid/Krave/blob/master/assets/images/KraveFinal.gif?raw=true)
 ![alt text](https://github.com/izzydavid/Krave/blob/master/assets/images/load-receipe.gif?raw=true)
 
 Original Ideas for Project 1 Notes

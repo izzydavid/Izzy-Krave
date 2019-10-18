@@ -22,19 +22,27 @@
   text-align: center !important;
 }
 
+.container-fluid { 
+  text-align: center;
+  min-width: 75%; 
+  max-height: 100%;
+  width: 100px !important; 
+}
+
 .card-panel {
-  max-width: 21%;
-  max-height: 35%;
+  max-width: 15%;
+  max-height: 50%;
   border-radius: 20px !important;
   margin: 5px !important;
   padding: 5px !important;
   font-size: 15px;
+  text-align: center;
 }
 
 #img2,
 img {
   border-radius: 20px !important;
-  width: 250px;
+  width: 260px !important; 
 }
 
 .card-title {
@@ -42,44 +50,37 @@ img {
 }
 
 /* End of Cooking Class Output CSS*/
-/* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
-
-@media screen and (min-width: 480px) {
-  #img2,
-  img {
-    width: 150px;
+  img, #img2 {
+    width: 140px !important;
+    height: 100px !important; 
   }
+
   #img3 {
-    height: 200px;
+    height: 125px;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  #img2, img {
-    width: 150px;
+  .KraveHeader { 
+    font-size: 100px; 
   }
+
+  input::placeholder {
+    font-size: 12px;
+    font-weight: bold; 
+  }
+
+  .card-panel {
+    max-width: 45%;
+    max-height: 19%;
+  }
+
+  
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px){
   #img2, img {
-    width: 250px;
+    min-width: 100%; 
+    height: 200px;
   }
 }

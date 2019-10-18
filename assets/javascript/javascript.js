@@ -17,7 +17,7 @@ window.onload = deferVideo;
 var queryURL;
 var queryParams;
 var selector = "";
-var limit = 20;
+var limit = 24;
 var areButtons = false;
 
 
@@ -100,10 +100,10 @@ function RestaurantsNearYou() {
       for (i = 0; i < limit; i++) {
         var resultImg = "<img id='img3' class= 'align-middle materialboxed' src=" + response.businesses[i].image_url + " alt='Card image cap'></img>";
         var resultLink = "<a href=" + response.businesses[i].url + "class='card-link' target='_blank'>" + response.businesses[i].name + "'s Yelp Page</a><p><p>"; 
-        var resultName = "<h5 class='card-title'>" + response.businesses[i].name + "</h5>";
+        var resultName = "<h5 class='card-title align-middle' style= text-align= 'center'>" + response.businesses[i].name + "</h5>";
         var resultRating = "<li> Rating: " + response.businesses[i].rating + " Stars</li>";
         var resultAddress = "<li>" + response.businesses[i].location.address1 + " " + response.businesses[i].location.city + " " + response.businesses[i].location.zip_code + "</li>";
-        var restaurantDiv = $("<div class='card-panel align-middle'>" + resultImg + resultName + resultRating + resultAddress + resultLink + "</div>");
+        var restaurantDiv = $("<div class='card-panel center-align'>" + resultImg + resultName + resultRating + resultAddress + resultLink + "</div>");
         $("#results-here").append(restaurantDiv);
       };
     }

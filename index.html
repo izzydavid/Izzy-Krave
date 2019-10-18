@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-
+<!doctype html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Krave</title>
   <meta name="description" content="">
-  <meta name="viewport" contexnt="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="assets/style/style.css">
   <link rel="stylesheet" type="text/css" href="assets/style/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Courgette|Noto+Sans+HK|Swanky+and+Moo+Moo&display=swap"
@@ -32,38 +32,41 @@
   </video>
   <!-- The End of the Video -->
 
-<div class="container center-align col s12 m4 l3"> 
-  <!-- The Beginning of the Crave -->
-  <a class="KraveHeader">Krave</a>
-  <!-- The End of the Crave -->
+<div class="container-fluid align-middle col s12 m4 l3"> 
+
+  <!-- The Beginning of the Krave -->
+  <div class="row">
+        <a class="KraveHeader align-middle col s12 m4 l3">Krave</a>
+  </div>
+  <!-- The End of the Krave -->
 
 
   <!-- Beginning of Search Bar -->
-  <div class="row">
-  <form id="searchBar" class=" col s12 m4 l3">
-    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">What are you
-      Kraving?<span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+  <form id="searchBar" class="row col s12 m4 l3">
+    <button class="btn btn-default dropdown-toggle row col s12 m4 l3 center-align" type="button" id="menu1" data-toggle="dropdown">What are you
+      Kraving?<span class="caret col s12 m4 l3"></span></button>
+    <ul class="dropdown-menu col s12 m4 l3" role="menu" aria-labelledby="menu1">
       <li role="presentation"><a role="menuitem" class="menu1-item" id="Recipes" tabindex="-1">Recipes</a></li>
-      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1">Cooking Classes</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1" style="text-align:center">Cooking Classes</a></li>
       <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants Near You" tabindex="-1">Restaurants Near You</a></li>
     </ul>
   </div> 
-    <div id="search-here" class="row center-align col s12 m4 l3">
+
+    <div id="search-here" class="col s12 m4 l3">
       <input id='search-bar' type='search' placeholder='Food Goes Here: Needed for Restaurants and Recipes'
-        style='color: ivory'>
+        style='color: ivory; text-align:center'>
 
-      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'style='color: ivory'>
+      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'style='color: ivory; text-align:center'>
 
-      <button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>
+      <button id='search-button' class='btn btn-lg btn-success col s12 m4 l3' type='submit'>Search</button>
 
     </div>
   </form>
   <!-- End of Search Bar -->
 
   <!-- Start of Results -->
-  <div class=" align-middle">
-  <div id="results-here" class="col s12 m4 l3 row">
+  <div class="col s12 m4 l3 align-middle row">
+  <div id="results-here" class="col s12 m4 l3 row align-middle">
   </div>
 </div> 
   <!-- End of Results -->

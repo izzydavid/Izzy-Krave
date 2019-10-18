@@ -87,17 +87,26 @@ img {
 @media (min-width: @screen-lg-min) { ... }
 
 
+@media only screen and (max-width: 320px)  {
+  img{ 
+    width: 100%; 
+  }
+  .card-panel {
+    min-width: 100%;
+    max-height: 100%;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   img, #img2 {
     min-width: 100%; 
     max-height: 100%; 
   }
-
   #img3 {
-    height: 125px;
+    max-height: 100%;
+    min-width: 100%; 
   }
-
   .KraveHeader { 
     font-size: 100px; 
   }
@@ -117,7 +126,24 @@ img {
 
 @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px){
   #img2, img, #img3 {
-    max-width: 100%; 
-    height: 200px;
+    min-width: 100%; 
+    max-height: 100%;
+  }
+
+  .card-panel {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1024px)  {
+
+  img{ 
+    width: 100%; 
+  }
+  .card-panel {
+    min-width: 100%;
+    max-height: 100%;
   }
 }

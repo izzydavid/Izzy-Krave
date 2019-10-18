@@ -23,20 +23,20 @@
   text-align: center !important;
 }
 
-.card-img-top { 
-  height: 150px;
-  width: 100px; 
-}
 
 .card-panel { 
-max-width: 25%; 
-max-height: 25%; 
+max-width: 20%; 
+max-height: 100%; 
 border-radius: 20px !important; 
 margin: 5px !important; 
 padding: 5px !important;
-float: left;
 font-size: 15px;
-overflow: hidden;
+}
+
+img{ 
+  border-radius: 20px !important;
+  height: 150px;
+  width: 230px; 
 }
 
 .card-title { 
@@ -59,6 +59,17 @@ overflow: hidden;
     
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {...}
-    
+
+    @media screen and (min-width: 480px) {
+
+    }
+  
+    @media only screen and (max-width: 600px) {
+
+    }
+  
+    @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+
+    }
     
     }

@@ -6,12 +6,12 @@
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; 
   background-size: cover;
   background-attachment: center;
   z-index: -1;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-color: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -22,16 +22,7 @@
   text-align: center !important;
 }
 
-.container-fluid { 
-  text-align: center;
-  min-width: 75%; 
-  max-height: 100%;
-  width: 100px !important; 
-}
-
 .card-panel {
-  max-width: 15%;
-  max-height: 50%;
   border-radius: 20px !important;
   margin: 5px !important;
   padding: 5px !important;
@@ -39,57 +30,62 @@
   text-align: center;
 }
 
-#img2,
-img {
-  border-radius: 20px !important;
-  min-width: 100%; 
+#buttons-here{ 
+  float: left;
+  text-align: center;
+  margin: 10px; 
 }
 
+.card-title, .card-link{ 
+  text-align: center !important;
+}
+
+#Recipes, #Cooking-Classes, #Restaurants-Near-You { 
+  font-size: 30px !important;
+}
+
+img {
+  border-radius: 20px !important;
+}
+
+#img3 { 
+  width: 100% !important; 
+}
+
+#menu1{ 
+  margin: 10px; 
+}
+.card-panel { 
+  min-width: 30%; 
+  max-height: 100% !important;
+  float: left;
+
+}
 .card-title {
   font-size: 15px;
 }
 
-/* End of Cooking Class Output CSS*/
-@media only screen and (min-width: 600px) {
-  img, #img2 {
-    min-width: 100%; 
-    max-height: 100% !important; 
+
+@media (min-aspect-ratio: 16/9) {
+  #myVideo {
+      width:100%;
+      height: auto;
   }
-
-  #img3 {
-    height: 125px;
-  }
-
-  .KraveHeader { 
-    font-size: 100px; 
-  }
-
-  input::placeholder {
-    font-size: 12px;
-    font-weight: bold; 
-  }
-
-
-
-  
 }
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
+}
+@media (max-aspect-ratio: 16/9) {
+#myVideo { 
+  width:auto;
+  height: 100%;
+}
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { ... }
+}
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
-
-
-@media only screen and (max-width: 320px)  {
+@media screen and (max-width: 320px)  {
   img{ 
-    width: 100%; 
+    min-width: 100%; 
+    max-height: 100%;
   }
   .card-panel {
     min-width: 100%;
@@ -97,50 +93,57 @@ img {
   }
 }
 
-
-@media only screen and (max-width: 600px) {
-  img, #img2 {
+@media screen and (max-width: 600px) {
+  img {
     min-width: 100%; 
     max-height: 100%; 
   }
-  #img3 {
-    max-height: 100%;
-    min-width: 100%; 
-  }
+
   .KraveHeader { 
     font-size: 100px; 
   }
-
   input::placeholder {
     font-size: 12px;
     font-weight: bold; 
   }
-
   .card-panel {
     max-width: 100%;
     max-height: 100%;
-  }
-
-  
+  }  
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px){
-  #img2, img, #img3 {
-    min-width: 100%; 
-    max-height: 100%;
+
+  #img{ 
+    height: 310px;
+    width: 350px; 
   }
 
+  #img2{
+    height: 275px !important;
+    width: 350px !important;
+  }
+  #img3 { 
+    max-width: 100% !important; 
+  }
   .card-panel {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 100px; 
+    height: 475px;
+    float: left;
+    font-size: 20px; 
   }
 
+  #recipesCardpanel{ 
+    height: 350px !important;
+  }
+  .card-title, .card-link{ 
+    text-align: center !important;
+  }
 }
 
-@media only screen and (max-width: 1024px)  {
-
+@media screen and (max-width: 1024px)  {
   img{ 
-    width: 100%; 
+    max-width: 100%; 
   }
   .card-panel {
     min-width: 100%;

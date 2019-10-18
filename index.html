@@ -32,7 +32,7 @@
   </video>
   <!-- The End of the Video -->
 
-<div class="container-fluid align-middle col s12 m4 l3"> 
+<div class="container-fluid"> 
 
   <!-- The Beginning of the Krave -->
   <div class="row">
@@ -42,40 +42,39 @@
 
 
   <!-- Beginning of Search Bar -->
-  <form id="searchBar" class="row col s12 m4 l3">
-    <button class="btn btn-default dropdown-toggle row col s12 m4 l3 center-align" type="button" id="menu1" data-toggle="dropdown">What are you
-      Kraving?<span class="caret col s12 m4 l3"></span></button>
-    <ul class="dropdown-menu col s12 m4 l3" role="menu" aria-labelledby="menu1">
+  <div class = "container col s12 m4 l3 center-align"> 
+  <form id="searchBar">
+    
+    <button class="btn btn- dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">What are you
+      Kraving?<span class="caret"></span></button>
+
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
       <li role="presentation"><a role="menuitem" class="menu1-item" id="Recipes" tabindex="-1">Recipes</a></li>
-      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking Classes" tabindex="-1" style="text-align:center">Cooking Classes</a></li>
-      <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants Near You" tabindex="-1">Restaurants Near You</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Cooking-Classes" tabindex="-1">Cooking Classes</a></li>
+      <li role="presentation"><a role="menuitem" class="menu1-item" id="Restaurants-Near-You" tabindex="-1">Restaurants Near You</a></li>
     </ul>
-  </div> 
 
-    <div id="search-here" class="col s12 m4 l3">
-      <input id='search-bar' type='search' placeholder='Food Goes Here: Needed for Restaurants and Recipes'
-        style='color: ivory; text-align:center'>
-
-      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'style='color: ivory; text-align:center'>
-
-      <button id='search-button' class='btn btn-lg btn-success col s12 m4 l3' type='submit'>Search</button>
-
-    </div>
+      <input id='search-bar' type='search' placeholder='Food Goes Here: Needed for Restaurants and Recipes'>
+      <input id='location-bar' type='search' placeholder='Location Here: Needed for Classes and Restaurants'>
+      <button id='search-button' class='btn btn-lg btn-success' type='submit'>Search</button>
   </form>
+  </div> 
   <!-- End of Search Bar -->
 
   <!-- Start of Results -->
-  <div class="col s12 m4 l3 align-middle row">
-  <div id="results-here" class="col s12 m4 l3 row align-middle">
-  </div>
+  <div class="container center-align">
+  <div id="results-here" class="col s12 m4 l3">
+</div> 
 </div> 
   <!-- End of Results -->
 
   <!-- Start of Clear Button -->
-  <div class="row center-align"> 
-  <div id="buttons-here" class="col s12 m4 l3">
-  </div>
-  </div>
+    <div id="buttons-here" class="col s12 m4 l3"></div> 
+
+
+  
+  
+
   <!-- End of Clear Button -->
 </div>
 

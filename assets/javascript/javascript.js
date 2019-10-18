@@ -11,12 +11,13 @@ function deferVideo() {
 $(document).ready(function(){
   $('.materialboxed').materialbox();
 });
+M.AutoInit();
 
 window.onload = deferVideo;
 var queryURL;
 var queryParams;
 var selector = "";
-var limit = 16;
+var limit = 20;
 var areButtons = false;
 
 
@@ -26,6 +27,7 @@ $(".menu1-item").click(function () {
   $("#results-here").empty();
   $("#buttons-here").empty();
   areButtons = false;
+  M.AutoInit();
 });
 
 $("#buttons-here").click(function () {
@@ -34,6 +36,7 @@ $("#buttons-here").click(function () {
   $("#search-bar").empty();
   $("#location-bar").empty();
   $("#buttons-here").empty();
+  M.AutoInit();
 });
 
 
@@ -52,6 +55,7 @@ $("#search-button").on("click", function (event) {
   if (selector === "Recipes") {
     RecipeSearch();
   }
+  M.AutoInit();
 });
 
 function CookingClasses() {
@@ -67,7 +71,7 @@ function CookingClasses() {
     console.log(classKi);
     var result1 = classKi.events;
     for (var k = 0; k < limit; k++) {
-      var result1Img = "<img id='img' class= 'materialboxed' src='assets/images/cookingClass1.jpg' alt='Card image cap'></img>";
+      var result1Img = "<img id='img2' class= 'align-middle materialboxed' src='assets/images/cookingClass1.jpg' alt='Card image cap'></img>";
       var result1Title = "<h5 class='card-title'>" + result1.event[k].title + "</h5>";
       var result1Start = "<li>" + result1.event[k].start_time + "</li>";
       var result1Address = "<li>" + result1.event[k].venue_address + " " + result1.event[k].city_name + " " + result1.event[k].region_name + "</li>";
@@ -75,9 +79,10 @@ function CookingClasses() {
       var classLife = $("<div class='card-panel align-middle'>" + result1Img + result1Title + result1Start + result1Address + result1Link + "</div>");
       $("#results-here").append(classLife);
     }
+    M.AutoInit();
   });
   event.preventDefault();
-};
+}
 
 function RestaurantsNearYou() {
   event.preventDefault();
@@ -93,7 +98,7 @@ function RestaurantsNearYou() {
     dataType: 'json',
     success: function (response) {
       for (i = 0; i < limit; i++) {
-        var resultImg = "<img id='img' class='materialboxed' src=" + response.businesses[i].image_url + " alt='Card image cap'></img>";
+        var resultImg = "<img id='img3' class= 'align-middle materialboxed' src=" + response.businesses[i].image_url + " alt='Card image cap'></img>";
         var resultLink = "<a href=" + response.businesses[i].url + "class='card-link' target='_blank'>" + response.businesses[i].name + "'s Yelp Page</a><p><p>"; 
         var resultName = "<h5 class='card-title'>" + response.businesses[i].name + "</h5>";
         var resultRating = "<li> Rating: " + response.businesses[i].rating + " Stars</li>";
@@ -102,7 +107,9 @@ function RestaurantsNearYou() {
         $("#results-here").append(restaurantDiv);
       };
     }
+    
   });
+  M.AutoInit();
 };
 
 function RecipeSearch() {
@@ -114,7 +121,7 @@ function RecipeSearch() {
     data: queryParams
   })
     .then(function (response) {
-      for (var i = 0; i < limit; i++) {
+      for (var i = 0; i < limit ; i++) {
         var images = "<img id='img' class ='materialboxed' src=" + response.hits[i].recipe.image + " alt='Card image cap' ></img>";
         var recipeLink = "<a class='card-title' target=_blank' href=" + response.hits[i].recipe.url + ">" + response.hits[i].recipe.label + "</a><p><p>"; 
         var foodLife = $("<div class='card-panel align-middle'>" + images + recipeLink + "</div>");
@@ -122,11 +129,13 @@ function RecipeSearch() {
       }
       console.log(response);
     });
+    M.AutoInit();
+
 }
 
 
 function hello() {
-  queryURL = "https://api.edamam.com/search?";
+  queryURL = "https://api.edamam.com/search?&from=0&to=12&";
   queryParams = {
     "app_id": "8cf95bef",
     "app_key": "ac167b48917875f7343e97f1423f5902"
@@ -136,7 +145,7 @@ function hello() {
 
 function takeClasses() {
   var area = $("#location-bar").val().trim();
-  classURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?q=cooking&l="+ area +"&within=10&units=miles&c=cooking"
+  classURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?q=cooking&l="+ area +"&within=10&units=miles&c=cooking&page_size=12"; 
   classParams = {
     "app_key": "Xgj2Vg7ptjMQR6q2"
   };

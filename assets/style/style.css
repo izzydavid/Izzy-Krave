@@ -1,5 +1,4 @@
-
-  /* Style the video: 100% width and height to cover the entire window */
+/* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
   top: 50%;
@@ -7,69 +6,80 @@
   min-width: 100%;
   min-height: 100%;
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: center;
   z-index: -1;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
-  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   transform: translateX(-50%) translateY(-50%);
 }
 
-.KraveHeader { 
-  color: ivory !important; 
-  font-family: 'Satisfy', cursive;
-  font-size: 200px; 
+.KraveHeader {
+  color: ivory !important;
+  font-family: "Satisfy", cursive;
+  font-size: 200px;
   text-align: center !important;
 }
 
-
-.card-panel { 
-max-width: 20%; 
-max-height: 100%; 
-border-radius: 20px !important; 
-margin: 5px !important; 
-padding: 5px !important;
-font-size: 15px;
-}
-
-img{ 
+.card-panel {
+  max-width: 21%;
+  max-height: 35%;
   border-radius: 20px !important;
-  height: 150px;
-  width: 230px; 
+  margin: 5px !important;
+  padding: 5px !important;
+  font-size: 15px;
 }
 
-.card-title { 
-  font-size: 15px; 
+#img2,
+img {
+  border-radius: 20px !important;
+  width: 250px;
 }
 
-  /* End of Cooking Class Output CSS*/
-  body { 
-    /* Extra small devices (phones, 600px and down) */
-    @media only screen and (max-width: 600px) {...} 
-    
-    /* Small devices (portrait tablets and large phones, 600px and up) */
-    @media only screen and (min-width: 600px) {...} 
-    
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (min-width: 768px) {...} 
-    
-    /* Large devices (laptops/desktops, 992px and up) */
-    @media only screen and (min-width: 992px) {...} 
-    
-    /* Extra large devices (large laptops and desktops, 1200px and up) */
-    @media only screen and (min-width: 1200px) {...}
+.card-title {
+  font-size: 15px;
+}
 
-    @media screen and (min-width: 480px) {
+/* End of Cooking Class Output CSS*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
 
-    }
-  
-    @media only screen and (max-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
 
-    }
-  
-    @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
 
-    }
-    
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 480px) {
+  #img2,
+  img {
+    width: 150px;
+  }
+  #img3 {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #img2, img {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px){
+  #img2, img {
+    width: 250px;
+  }
+}
